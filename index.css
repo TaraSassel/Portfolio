@@ -535,6 +535,18 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
+.three__column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gutter-normal);
+}
+
+@media (max-width: 900px) {
+  .three__column {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* --------------------------------------- */
 /* ----- Clients ----- */
 /* --------------------------------------- */
