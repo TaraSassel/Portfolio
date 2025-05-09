@@ -490,6 +490,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__image-box {
+    background-color: transparent;
     margin-bottom: var(--gutter-normal);
 }
 
