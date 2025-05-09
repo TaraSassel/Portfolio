@@ -68,7 +68,7 @@
     <!-- ***** PhD ***** -->
      <section class="PhD_Project" id="PhD_Project">
       <div class="row">
-        <h2>PhD Project</h2>
+        <h2>PhD Project: DEM study of the behaviour of granular materials during drained cyclic loading</h2>
           <p>
             My PhD focused on the behaviour of granular materials subjected to drained cyclic loading. 
             These conditions can be found adjacent to integral bridge abutments and wind turbines with monopile foundation. 
@@ -152,16 +152,34 @@
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Calculator</h3>
+              <h3>Android Game</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+                <h4>The Game</h4>
+                The game was created in Android Studio using Java. 
+                It follows a simple concept where the main character can be moved left or right by pressing on the left or right half of the screen. 
+                The goal is it to avoid the falling objects unless a hammer has been collected in which case the user can destroy the objects and collect points. 
+                The falling assets are called triaxial apparatus which is an equipment used in geotechnical engineering for soil testing. 
+                The background is Queens Tower which is located a Imperial College London. 
+                When losing the game, the following quote appears "You got soiled".
+              </p>
+              <div class="work__image-box">
+                <img src="./images/ScreenshotSoiled1.png" class="work__image" alt="Project 2" />
+              </div>
+              <p>
+              The main character is animated by looping through different images scaled according to screen width which are updated every few milliseconds when walking left or right. The images have been created in GIMP which is an image editor in a pixel art style. Booleans (true or false conditions) are used to determine if the character is walking or not, left or right, and if the character has collected a hammer in which case the arms get replaced by an arm holding a hammer.
+              An invisible square box is placed around the character and the falling objects. If the two collide the game is either lost or a point is collected depending on if the main character is currently in possession of a hammer.
+              </p>
+              <p>
+                <h4>Online Leaderboard</h4>
+                The online Leaderboard system is connected to Google Firebase, where the data in this case the username and score and timestamp is submitted to an online database if the user wishes to do so. 
+                Equally if the user wishes to view the Leaderboard the data of the first top 50 players is retrieved from Firebase.
               </p>
               <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
+                <li>Java</li>
+                <li>NoSQL</li>
+                <li>Android Studio</li>
+                <li>Firebase</li>
+                <li>GIMP</li>
               </ul>
 
               <div class="work__links">
@@ -172,9 +190,6 @@
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a>
               </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
             </div>
           </div>
 
