@@ -41,7 +41,7 @@
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#Projects" class="nav__link">Projects</a></li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
           </li>
@@ -65,27 +65,56 @@
   </header>
 
   <main role="main">
+    <!-- ***** PhD ***** -->
+     <section class="PhD_Project" id="PhD_Project">
+      <div class="row">
+        <h2>PhD Project</h2>
+          <p>
+            My PhD focused on the behaviour of granular materials subjected to drained cyclic loading. 
+            These conditions can be found adjacent to integral bridge abutments and wind turbines with monopile foundation. 
+            These applications where the primary motivation for the research.
+          </p>
+        <div class="work__box">
+            <div class="work__text">
+              <h3>Molecular Dynamic Simulations in LAMMPS</h3>
+              <p>
+                I have been using an open-source molecular dynamics code called LAMMPS (Large-scale Atomic/Molecular Massively Parallel Simulator) to create samples up to 150k particles. 
+                The particles represent sand samples and are loaded cyclically under varying conditions. 
+                The samples can consist of spheres or clumps (two over lapping spheres). 
+                A smaller sample of about 8k clumps is represented below. 
+                Properties such as particle movement, contact number, stresses etc are output throughout the simulation resulting in large quantities of data to be processed. 
+                The simulations are run on the Imperial College high-performance computing (HPC) cluster.
+              </p>
+            </div>
+        </div>
+      </div>
+     </section>
 
     <!-- ***** Work ***** -->
 
-    <section class="work" id="work">
+    <section class="Projects" id="Projects">
       <div class="row">
-        <h2>My Work</h2>
+        <h2>My Projects</h2>
         <div class="work__boxes">
 
           <!-- Each div with the work__box class is a project. -->
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Portfolio Template</h3>
+              <h3>Energy Spot Price Forecast</h3>
               <p>
-                A free Open Source Portfolio for anyone to use for free.
+                In this project, predictions for the energy spot price of a given country were made based on renewable energy sources such as solar and wind (both onshore and offshore), as well as energy demand. 
+                XGBoost models were trained for different countries. 
+                To prevent overfitting, the tree depth and learning rate were carefully selected to minimize the RMSE gap between the training and validation sets. 
+                Feature engineering was performed to optimize model performance. 
+                The data used in this analysis was obtained via API requests from Energy-Charts.info, using data licensed under CC BY 4.0.
               </p>
+              
               <ul class="work__list">
-                <li>HTML</li>
-                <li>SCSS</li>
-                <li>JavaScript</li>
-                <li>Parcel</li>
+                <li>Python</li>
+                <li>Streamlit</li>
+                <li>XGBoost</li>
+                <li>Pandas</li>
               </ul>
 
               <div class="work__links">
@@ -95,7 +124,7 @@
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
+              <img src="./images/Project_Overview_EnergyForecast.png" class="work__image" alt="Project 1" />
             </div>
           </div>
 
