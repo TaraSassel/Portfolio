@@ -536,14 +536,24 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .three__column {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: var(--gutter-normal);
+  justify-content: space-between;
+}
+
+.three__column > * {
+  flex: 1 1 30%; /* allows wrapping and roughly three columns */
+  min-width: 250px;
 }
 
 @media (max-width: 900px) {
   .three__column {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .three__column > * {
+    flex: 1 1 100%;
   }
 }
 
