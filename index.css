@@ -38,6 +38,7 @@
     --blue: #33b5ff;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
+    --darkblue: #143fd1;
 
 
     --container-max-width: 1180px;
@@ -243,11 +244,11 @@ body:not(.user-is-tabbing) a:focus {
 .btn:hover::after,
 .btn:focus::after {
     right: 0;
-    background: var(--blue);
+    background: var(--darkblue);
 }
 
 .btn--blue {
-    background: var(--blue);
+    background: var(--darkblue);
     transition: all 0.2s;
 }
 
