@@ -560,7 +560,7 @@ body:not(.user-is-tabbing) a:focus {
   flex: 1;
 }
 
-.three__column-row {
+.three__column--row {
   display: flex;
   gap: var(--gutter-normal);
   align-items: flex-start; /* Ensures they all start from the top */
