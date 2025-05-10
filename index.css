@@ -506,6 +506,10 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: var(--gutter-normal);
 }
 
+.work__list--indented {
+  margin-left: var(--gutter-normal); /* matches your column spacing */
+}
+
 .work__code {
     display: block;
     height: 3rem;
@@ -556,7 +560,7 @@ body:not(.user-is-tabbing) a:focus {
   width: 100%;
   height: auto;
   display: block;
-  max-height: 300px;
+  max-height: 600px;
 }
 
 
