@@ -556,6 +556,7 @@ body:not(.user-is-tabbing) a:focus {
   width: 100%;
   height: auto;
   display: block;
+  max-height: 300px;
 }
 
 
