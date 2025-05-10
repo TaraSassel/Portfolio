@@ -551,6 +551,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .three__column > .work__text,
+.three__column > .work__list--indented,
 .three__column > .work__image-box1 {
   flex: 1;
 }
