@@ -537,13 +537,20 @@ body:not(.user-is-tabbing) a:focus {
 
 .three__column {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem; /* Adjust spacing between columns */
+  flex-wrap: nowrap;
+  gap: 2rem;
+  align-items: flex-start;
 }
 
-.three__column > div {
-  flex: 1; /* This ensures each column takes equal space */
-  min-width: 250px; /* Optional: ensures columns don't shrink too much */
+.three__column > .work__text,
+.three__column > .work__image-box {
+  flex: 1;
+}
+
+.work__image-box img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 @media (max-width: 900px) {
