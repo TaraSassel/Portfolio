@@ -507,7 +507,11 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__list--indented {
-  margin-left: var(--gutter-normal); /* matches your column spacing */
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+  margin-top: 2rem; /* Push it down slightly */
+  margin-left: var(--gutter-normal); /* Match usual column spacing */
 }
 
 .work__code {
@@ -554,6 +558,12 @@ body:not(.user-is-tabbing) a:focus {
 .three__column > .work__list--indented,
 .three__column > .work__image-box1 {
   flex: 1;
+}
+
+.three__column-row {
+  display: flex;
+  gap: var(--gutter-normal);
+  align-items: flex-start; /* Ensures they all start from the top */
 }
 
 .work__image-box1 {
