@@ -636,6 +636,10 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: var(--gutter-normal);
 }
 
+.about__text p {
+  text-align: justify;
+}
+
 @media(min-width: 901px) {
     .about__text {
         flex: 0 0 35%;
